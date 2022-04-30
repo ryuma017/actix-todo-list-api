@@ -2,7 +2,7 @@
 This repository is a sample of a Todo application's back-end API that running on AWS Lambda.
 
 
-\> Requirements:
+\> **Requirements**:
 - Lang -> Rust
 - Build for Amazon Linux 2 runtimes
 - Deploy with AWS SAM CLI
@@ -60,12 +60,12 @@ Content-Type: application/json
 [
   {
     "id": 1,
-    "title": "Learning Rust"
+    "title": "Learning Rust",
     "description": "Vec, HashMap, BtreeMap"
   },
   {
     "id": 2,
-    "title": "Learning AWS"
+    "title": "Learning AWS",
     "description": "VPC, Gateway, Lambda function"
   },
   ...
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "id": 1,
-  "title": "Learning Rust"
+  "title": "Learning Rust",
   "description": "Vec, HashMap, BtreeMap"
 }
 ```
@@ -100,7 +100,7 @@ Request:
 POST /todos HTTP/1.1
 Content-Type: application/json
 {
-  "title": "Learning Rust"
+  "title": "Learning Rust",
   "description": "Vec, HashMap, BtreeMap"
 }
 ```
@@ -112,40 +112,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "id": 1,
-  "title": "Learning Rust"
+  "title": "Learning Rust",
   "description": "Vec, HashMap, BtreeMap"
 }
 ```
 
 ### PUT `/todos/{id}` -> Update a desired todo list
 
-Request
+Request:
 
 ```
-POST /todos HTTP/1.1
+PUT /todos HTTP/1.1
 Content-Type: application/json
 {
   "id": 1,
-  "title": "Learning Python"
+  "title": "Learning Python",
   "description": "Fast API"
 }
 ```
 
-Response
+Response:
 
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "id": 1,
-  "title": "Learning Python"
+  "title": "Learning Python",
   "description": "Fast API"
 }
 ```
 
 ### DELEAT `/todos/{id}` -> Delete a desired todo list
 
-Request
+Request:
 
 ```
 POST /todos HTTP/1.1
@@ -155,7 +155,7 @@ Content-Type: application/json
 }
 ```
 
-Response
+Response:
 
 ```
 HTTP/1.1 200 OK
