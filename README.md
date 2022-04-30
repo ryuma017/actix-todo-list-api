@@ -10,7 +10,7 @@ This repository is a sample of a Todo application's back-end API that running on
 
 # Routes
 
-## `GET /health_check` - Get the health check working
+### `GET /health_check` - Get the health check working
 
 **Request**:
 
@@ -26,7 +26,7 @@ HTTP/1.1 200 OK
 content-length: 0
 ```
 
-## `GET /` - Get status
+### `GET /` - Get status
 
 **Request**:
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 }
 ```
 
-## `GET /todos` - Get all todo lists
+### `GET /todos` - Get all todo lists
 
 **Request**:
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 ]
 ```
 
-## `GET /todos/{id}` - Get a desired todo list
+### `GET /todos/{id}` - Get a desired todo list
 
 **Request**:
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 }
 ```
 
-## `POST /todos` - Create a todo list
+### `POST /todos` - Create a todo list
 
 **Request**:
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-## PUT `/todos/{id}` -> Update a desired todo list
+### PUT `/todos/{id}` -> Update a desired todo list
 
 **Request**
 
@@ -143,7 +143,7 @@ Content-Type: application/json
 }
 ```
 
-## DELEAT `/todos/{id}` -> Delete a desired todo list
+### DELEAT `/todos/{id}` -> Delete a desired todo list
 
 **Request**
 
