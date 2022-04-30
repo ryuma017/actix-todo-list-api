@@ -2,7 +2,7 @@
 This repository is a sample of a Todo application's back-end API that running on AWS Lambda.
 
 
-\> **Requirements**:
+\> Requirements:
 - Lang -> Rust
 - Build for Amazon Linux 2 runtimes
 - Deploy with AWS SAM CLI
@@ -12,14 +12,14 @@ This repository is a sample of a Todo application's back-end API that running on
 
 ### `GET /health_check` - Get the health check working
 
-**Request**:
+Request:
 
 ```
 GET /health_check HTTP/1.1
 Host: example.jp
 ```
 
-**Response**:
+Response:
 
 ```
 HTTP/1.1 200 OK
@@ -28,13 +28,13 @@ content-length: 0
 
 ### `GET /` - Get status
 
-**Request**:
+Request:
 
 ```
 GET / HTTP/1.1
 ```
 
-**Response**:
+Response:
 
 ```
 HTTP/1.1 200 OK
@@ -46,13 +46,13 @@ Content-Type: application/json
 
 ### `GET /todos` - Get all todo lists
 
-**Request**:
+Request:
 
 ```
 GET /todos HTTP/1.1
 ```
 
-**Response**:
+Response:
 
 ```
 HTTP/1.1 200 OK
@@ -74,13 +74,13 @@ Content-Type: application/json
 
 ### `GET /todos/{id}` - Get a desired todo list
 
-**Request**:
+Request:
 
 ```
 GET /todos/1 HTTP/1.1
 ```
 
-**Response**:
+Response:
 
 ```
 HTTP/1.1 200 OK
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ### `POST /todos` - Create a todo list
 
-**Request**:
+Request:
 
 ```
 POST /todos HTTP/1.1
@@ -105,7 +105,7 @@ Content-Type: application/json
 }
 ```
 
-**Response**:
+Response:
 
 ```
 HTTP/1.1 200 OK
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 ### PUT `/todos/{id}` -> Update a desired todo list
 
-**Request**
+Request
 
 ```
 POST /todos HTTP/1.1
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-**Response**
+Response
 
 ```
 HTTP/1.1 200 OK
@@ -145,7 +145,7 @@ Content-Type: application/json
 
 ### DELEAT `/todos/{id}` -> Delete a desired todo list
 
-**Request**
+Request
 
 ```
 POST /todos HTTP/1.1
@@ -155,7 +155,7 @@ Content-Type: application/json
 }
 ```
 
-**Response**
+Response
 
 ```
 HTTP/1.1 200 OK
