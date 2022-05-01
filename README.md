@@ -5,7 +5,7 @@ This repository is a sample of a Todo application's back-end API that running on
 \> **Requirements**:
 - Lang -> Rust
 - Build for Amazon Linux 2 runtimes
-- Deploy with AWS SAM CLI
+- Deploy via AWS SAM CLI
 
 
 # Routes
@@ -60,13 +60,11 @@ Content-Type: application/json
 [
   {
     "id": 1,
-    "title": "Learning Rust",
-    "description": "Vec, HashMap, BtreeMap"
+    "title": "Learning Rust"
   },
   {
     "id": 2,
-    "title": "Learning AWS",
-    "description": "VPC, Gateway, Lambda function"
+    "title": "Learning AWS"
   },
   ...
 ]
