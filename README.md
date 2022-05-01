@@ -86,7 +86,6 @@ Content-Type: application/json
 {
   "id": 1,
   "title": "Learning Rust",
-  "description": "Vec, HashMap, BtreeMap"
 }
 ```
 
@@ -99,7 +98,6 @@ POST /todos HTTP/1.1
 Content-Type: application/json
 {
   "title": "Learning Rust",
-  "description": "Vec, HashMap, BtreeMap"
 }
 ```
 
@@ -111,7 +109,6 @@ Content-Type: application/json
 {
   "id": 1,
   "title": "Learning Rust",
-  "description": "Vec, HashMap, BtreeMap"
 }
 ```
 
@@ -125,7 +122,6 @@ Content-Type: application/json
 {
   "id": 1,
   "title": "Learning Python",
-  "description": "Fast API"
 }
 ```
 
@@ -137,7 +133,6 @@ Content-Type: application/json
 {
   "id": 1,
   "title": "Learning Python",
-  "description": "Fast API"
 }
 ```
 
