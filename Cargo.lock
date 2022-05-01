@@ -182,19 +182,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "actix_lambda"
-version = "0.1.0"
-dependencies = [
- "actix-web",
- "aws-config",
- "aws-sdk-dynamodb",
- "env_logger",
- "log",
- "serde",
- "uuid",
-]
-
-[[package]]
 name = "adler"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1619,6 +1606,19 @@ name = "tinyvec_macros"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
+
+[[package]]
+name = "todo_list_api"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "aws-config",
+ "aws-sdk-dynamodb",
+ "env_logger",
+ "log",
+ "serde",
+ "uuid",
+]
 
 [[package]]
 name = "tokio"
