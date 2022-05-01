@@ -44,12 +44,12 @@ Content-Type: application/json
 }
 ```
 
-### `GET /todos` - Get all todo lists
+### `GET /tasks` - Get all todo lists
 
 Request:
 
 ```
-GET /todos HTTP/1.1
+GET /tasks HTTP/1.1
 ```
 
 Response:
@@ -70,12 +70,12 @@ Content-Type: application/json
 ]
 ```
 
-### `GET /todos/{id}` - Get a desired todo list
+### `GET /tasks/{id}` - Get a desired todo list
 
 Request:
 
 ```
-GET /todos/1 HTTP/1.1
+GET /tasks/1 HTTP/1.1
 ```
 
 Response:
@@ -89,12 +89,12 @@ Content-Type: application/json
 }
 ```
 
-### `POST /todos` - Create a todo list
+### `POST /tasks` - Create a todo list
 
 Request:
 
 ```
-POST /todos HTTP/1.1
+POST /tasks HTTP/1.1
 Content-Type: application/json
 {
   "title": "Learning Rust",
@@ -117,7 +117,7 @@ Content-Type: application/json
 Request:
 
 ```
-PUT /todos HTTP/1.1
+PUT /tasks HTTP/1.1
 Content-Type: application/json
 {
   "id": 1,
@@ -136,12 +136,12 @@ Content-Type: application/json
 }
 ```
 
-### DELEAT `/todos/{id}` -> Delete a desired todo list
+### DELETE `/tasks/{id}` -> Delete a desired todo list
 
 Request:
 
 ```
-POST /todos HTTP/1.1
+DELETE /tasks/{id} HTTP/1.1
 Content-Type: application/json
 {
   "id": 2
