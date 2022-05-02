@@ -1,9 +1,6 @@
-use actix_web::{self, get, middleware::Logger, App, HttpResponse, HttpServer};
+use actix_web::{self, middleware::Logger, App, HttpServer};
 
-#[get("/health_check")]
-pub async fn health_check() -> HttpResponse {
-    HttpResponse::Ok().finish()
-}
+use todo_list_api::routes::health_check;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
