@@ -2,12 +2,6 @@
 This repository is a sample of a Todo application's back-end API that running on AWS Lambda.
 
 
-\> **Requirements**:
-- Lang -> Rust
-- Build for Amazon Linux 2 runtimes
-- Deploy via AWS SAM CLI
-
-
 # Routes
 
 ### `GET /health_check` - Get the health check working
